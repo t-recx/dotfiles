@@ -1,0 +1,8 @@
+set guioptions -=m  " Disable menu
+set guioptions -=T  " Disable toolbar
+set guioptions -=r  " Disable right scrollbar
+set guioptions -=L  " Disable left scrollbar
+
+set mouse=c         " Disable mouse input
+
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12

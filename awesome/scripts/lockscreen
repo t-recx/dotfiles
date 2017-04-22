@@ -1,0 +1,45 @@
+#!/home/joao/.rbenv/shims/ruby
+@cmus_remote = '/home/joao/local/bin/cmus-remote'
+@amixer = 'amixer'
+@lock_program = 'slock'
+
+def toggle_cmus_play
+  `#{@cmus_remote} --pause` 
+end
+
+def toggle_mixer_mute
+  `#{@amixer} set Master toggle` 
+end
+
+def lock_screen
+  `#{@lock_program}`
+end
+
+def cmus_playing?
+  `#{@cmus_remote} -Q`.include? 'status playing'
+end
+
+def mixer_sound_on?
+  `#{@amixer} sget Master`.split("\n").last.include? '[on]'
+end
+
+def pause_chrome_processes
+  `pkill -SIGSTOP chrome`
+end
+
+def resume_chrome_processes
+  `pkill -SIGCONT chrome`
+end
+
+cmus_playing = cmus_playing?
+sound_on = mixer_sound_on?
+
+toggle_mixer_mute if sound_on
+toggle_cmus_play if cmus_playing
+pause_chrome_processes
+
+lock_screen
+
+toggle_mixer_mute if sound_on
+toggle_cmus_play if cmus_playing
+resume_chrome_processes

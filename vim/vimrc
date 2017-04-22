@@ -1,0 +1,43 @@
+execute pathogen#infect()
+
+set nocompatible
+syntax on
+
+if has("autocmd")
+  filetype on           
+  filetype indent on    
+  filetype plugin on    
+
+  " Jump to the last position when reopening a file:
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+colorscheme solarized
+set background=dark
+
+set number 
+set laststatus=2  " Always show the statusbar
+
+set expandtab
+set tabstop=2 
+set shiftwidth=2 
+set softtabstop=2
+set backspace=2 
+
+set wildmenu
+
+set autoindent
+
+let g:airline_powerline_fonts = 1
+
+" Activate syntax folding.
+if has('folding')
+    set foldmethod=syntax
+    set foldlevel=99 " no closed folds at default, 'foldenable' would disable
+                     " folding which is not what I want
+    " Don't open folds for block movements like '(', '{', '[[', '[{', etc.
+    set foldopen-=block
+endif
+
+" \h - Toggle highlight:
+nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n" 
