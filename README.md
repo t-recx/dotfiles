@@ -35,6 +35,8 @@ ln -s ~/dotfiles/awesome ~/.config/awesome
 ln -s ~/dotfiles/bash/bashrc ~/.bashrc
 ln -s ~/dotfiles/bash/bash_aliases ~/.bash_aliases
 ln -s ~/dotfiles/awesome/scripts/lockscreen ~/local/bin/
+mkdir -p ~/.config/sakura
+ln -s ~/dotfiles/sakura/sakura.conf ~/.config/sakura/sakura.conf
 ```
 
 ## Random things:
