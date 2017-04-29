@@ -5,7 +5,7 @@
 
 -- {{{ Main
 theme = {}
-theme.wallpaper_cmd = { "awsetbg -c /usr/share/awesome/themes/zenburn/zenburn-background.png" }
+theme.wallpaper_cmd = { xsetroot -solid '#000000' }
 -- }}}
 
 -- {{{ Styles
