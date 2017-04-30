@@ -5,11 +5,11 @@
 
 -- {{{ Main
 theme = {}
-theme.wallpaper_cmd = { xsetroot -solid '#000000' }
+theme.wallpaper_cmd = { "xsetroot -solid '#000000'" }
 -- }}}
 
 -- {{{ Styles
-theme.font      = "sans 10"
+theme.font      = "sans 8"
 
 -- {{{ Colors
 theme.fg_normal = "#DCDCCC"
@@ -48,7 +48,7 @@ theme.taglist_squares_unsel = "/usr/share/awesome/themes/zenburn/taglist/squarez
 -- }}}
 
 -- {{{ Misc
-theme.awesome_icon           = "/usr/share/awesome/themes/zenburn/awesome-icon.png"
+theme.awesome_icon           = awful.util.getdir("config") .. "/" .. "menu_icon.png"
 theme.menu_submenu_icon      = "/usr/share/awesome/themes/default/submenu.png"
 -- }}}
 
