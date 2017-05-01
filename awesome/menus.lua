@@ -10,8 +10,8 @@ main_menu = awful.menu({ items = {
 
   { "terminal", terminal },
   { "chrome", "google-chrome" },
-  -- { "incognito", "google-chrome --incognito" },
-  -- { "irc", terminal .. " -e " .. local_bin_path .. "weechat" },
+  { "incognito", "google-chrome --incognito" },
+  { "irc", terminal .. " -e " .. local_bin_path .. "/weechat" },
   { "gvim", "gvim" },
   { "kodi", "kodi" },
   { "files", "nautilus" },

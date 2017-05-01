@@ -9,7 +9,7 @@ theme.wallpaper_cmd = { "xsetroot -solid '#000000'" }
 -- }}}
 
 -- {{{ Styles
-theme.font      = "sans 8"
+theme.font      = "sans 10"
 
 -- {{{ Colors
 theme.fg_normal = "#DCDCCC"
