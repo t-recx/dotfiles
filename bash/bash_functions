@@ -1,3 +1,17 @@
+function rotate {
+ if [ -z "$1" ]; then
+    echo "Usage: rotate <picture> [picture2] [picture3]"
+    return 1
+ else
+    for n in $@
+    do
+      if [ -f "$n" ] ; then
+        convert $n -rotate 90 $n
+      fi
+    done
+ fi
+}
+
 function extract {
  if [ -z "$1" ]; then
     # display usage if no parameters given
