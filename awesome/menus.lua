@@ -21,6 +21,7 @@ main_menu = awful.menu({ items = {
   { "torrents", terminal .. " -e rtorrent" },
   { "spotify", "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=kfbnhhcmmpmjfkkakaplojljcodkmobo" },
   { "games", games_menu },
+  { "settings", "gnome-control-center" },
   { "restart", awesome.restart },
   { "lock", lock_program },
   { "quit", awesome.quit },
