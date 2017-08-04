@@ -13,6 +13,8 @@ main_menu = awful.menu({ items = {
   { "incognito", "google-chrome --incognito" },
   { "irc", terminal .. " -e " .. local_bin_path .. "/weechat" },
   { "gvim", "gvim" },
+  { "monodev", "monodevelop" },
+  { "tiled", "tiled" },
   { "kodi", "kodi" },
   { "files", "nautilus" },
   { "packages", "gksudo synaptic-pkexec" },
