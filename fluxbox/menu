@@ -1,0 +1,143 @@
+[begin] (Fluxbox)
+
+  [exec] (Terminal) {/usr/local/bin/sakura}
+  [exec] (Chrome) {google-chrome}
+  [exec] (Incognito) {google-chrome --incognito}
+  [exec] (Irc)  {/usr/local/bin/sakura -e ~/local/bin/weechat},
+  [exec] (Gvim) {gvim}
+  [exec] (Monodev) {monodevelop}
+  [exec] (Tiled) {tiled}
+  [exec] (Kodi) {kodi}
+  [exec] (Files) {nautilus}
+  [exec] (Packages) {gksudo synaptic-pkexec}
+  [exec] (Cmus)  {/usr/local/bin/sakura -e ~/local/bin/cmus },
+  [exec] (Aseprite) {aseprite}
+  [exec] (Torrents)  {/usr/local/bin/sakura -e rtorrent},
+  [exec] (Spotify) {/opt/google/chrome/google-chrome --profile-directory=Default --app-id=kfbnhhcmmpmjfkkakaplojljcodkmobo" }
+
+  [submenu] (Other) {}
+   [submenu] (Applications) {}
+      [submenu] (Editors) {}
+         [exec] (Gedit) {/usr/bin/gedit} </usr/share/pixmaps/gedit-icon.xpm>
+      [end]
+      [submenu] (File Management) {}
+         [exec] (Baobab) {/usr/bin/baobab} </usr/share/pixmaps/baobab.xpm>
+         [exec] (Nautilus) {/usr/bin/nautilus} </usr/share/pixmaps/nautilus.xpm>
+      [end]
+      [submenu] (Graphics) {}
+         [exec] (ASEPRITE) {/usr/bin/aseprite} </usr/share/pixmaps/ase32.xpm>
+         [exec] (gtk-recordmydesktop) {/usr/bin/gtk-recordmydesktop} </usr/share/pixmaps/gtk-recordmydesktop.xpm>
+         [exec] (LibreOffice Draw) {/usr/bin/libreoffice --draw} </usr/share/icons/hicolor/32x32/apps/libreoffice-draw.xpm>
+         [exec] (Schism Tracker Font Editor) {/usr/bin/schism --font-editor} <>
+         [exec] (The GIMP) {/usr/bin/gimp} </usr/share/pixmaps/gimp.xpm>
+         [exec] (xcb) {/usr/bin/xcb} <>
+      [end]
+      [submenu] (Office) {}
+         [exec] (LibreOffice Calc) {/usr/bin/libreoffice --calc} </usr/share/icons/hicolor/32x32/apps/libreoffice-calc.xpm>
+         [exec] (LibreOffice Impress) {/usr/bin/libreoffice --impress} </usr/share/icons/hicolor/32x32/apps/libreoffice-impress.xpm>
+         [exec] (LibreOffice Writer) {/usr/bin/libreoffice --writer} </usr/share/icons/hicolor/32x32/apps/libreoffice-writer.xpm>
+      [end]
+      [submenu] (Programming) {}
+         [exec] (MonoDevelop) {/usr/bin/monodevelop} </usr/share/icons/hicolor/scalable/apps/monodevelop.svg>
+         [exec] (Monodoc) {/usr/bin/monodoc} </usr/share/pixmaps/monodoc.png>
+      [end]
+      [submenu] (Project Management) {}
+         [exec] (GTimer) {/usr/bin/gtimer} </usr/share/pixmaps/gtimer.xpm>
+      [end]
+      [submenu] (Sound) {}
+         [exec] (Audacity) {/usr/bin/audacity} </usr/share/pixmaps/audacity32.xpm>
+         [exec] (Goobox) {/usr/bin/goobox} </usr/share/pixmaps/goobox.xpm>
+         [exec] (qmmp) {/usr/bin/qmmp} <>
+         [exec] (Rhythmbox) {/usr/bin/rhythmbox} </usr/share/pixmaps/rhythmbox-small.xpm>
+         [exec] (Schism Tracker) {/usr/bin/schism} <>
+         [exec] (TiMidity++) {timidity -ia} </usr/share/pixmaps/timidity.xpm>
+      [end]
+      [submenu] (System) {}
+         [submenu] (Administration) {}
+            [exec] (Debian Task selector) { x-terminal-emulator -T "Debian Task selector" -e su-to-root -c tasksel} <>
+            [exec] (Editres) {editres} <>
+            [exec] (Gnome Control Center) {/usr/bin/gnome-control-center} </usr/share/pixmaps/gnome-control-center.xpm>
+            [exec] (GNOME Network Tool) {/usr/bin/gnome-nettool} </usr/share/pixmaps/gnome-nettool.xpm>
+            [exec] (GNOME partition editor) {su-to-root -X -c /usr/sbin/gparted} </usr/share/pixmaps/gparted.xpm>
+            [exec] (Reportbug) { x-terminal-emulator -T "Reportbug" -e /usr/bin/reportbug --exit-prompt} <>
+            [exec] (Reportbug (GTK+\)) {/usr/bin/reportbug --exit-prompt --ui gtk2} <>
+            [exec] (Xfontsel) {xfontsel} <>
+            [exec] (Xkill) {xkill} <>
+            [exec] (Xrefresh) {xrefresh} <>
+         [end]
+         [submenu] (Hardware) {}
+            [exec] (Xvidtune) {xvidtune} <>
+         [end]
+         [submenu] (Monitoring) {}
+            [exec] (GNOME system monitor) {/usr/bin/gnome-system-monitor} <>
+            [exec] (Pstree) { x-terminal-emulator -T "Pstree" -e /usr/bin/pstree.x11} </usr/share/pixmaps/pstree16.xpm>
+            [exec] (Top) { x-terminal-emulator -T "Top" -e /usr/bin/top} <>
+            [exec] (Xev) {x-terminal-emulator -e xev} <>
+         [end]
+         [submenu] (Package Management) {}
+            [exec] (Aptitude Package Manager (text\)) { x-terminal-emulator -T "Aptitude Package Manager (text)" -e /usr/bin/aptitude-curses} <>
+            [exec] (Synaptic Package Manager) {x-terminal-emulator -e synaptic-pkexec} </usr/share/synaptic/pixmaps/synaptic_32x32.xpm>
+         [end]
+      [end]
+      [submenu] (Terminal Emulators) {}
+         [exec] (Aterm) {/usr/bin/aterm-xterm} <>
+         [exec] (Gnome Terminal) {/usr/bin/gnome-terminal} </usr/share/pixmaps/gnome-terminal.xpm>
+         [exec] (Rxvt) {/usr/bin/rxvt-xterm} <>
+         [exec] (Xfce Terminal) {/usr/bin/xfce4-terminal} </usr/share/pixmaps/xfce4-terminal.xpm>
+         [exec] (XTerm) {xterm} </usr/share/pixmaps/xterm-color_32x32.xpm>
+         [exec] (X-Terminal as root (GKsu\)) {/usr/bin/gksu -u root /usr/bin/x-terminal-emulator} </usr/share/pixmaps/gksu-debian.xpm>
+         [exec] (XTerm (Unicode\)) {uxterm} </usr/share/pixmaps/xterm-color_32x32.xpm>
+      [end]
+      [submenu] (Text) {}
+         [exec] (Character map) {/usr/bin/gucharmap} <>
+         [exec] (GNOME Dictionary) {/usr/bin/gnome-dictionary} </usr/share/pixmaps/gdict.xpm>
+      [end]
+      [submenu] (Video) {}
+         [exec] (Totem) {/usr/bin/totem} </usr/share/pixmaps/totem.xpm>
+         [exec] (VLC media player) {/usr/bin/qvlc} </usr/share/icons/hicolor/32x32/apps/vlc.xpm>
+      [end]
+      [submenu] (Viewers) {}
+         [exec] (Eye of GNOME) {/usr/bin/eog} </usr/share/pixmaps/gnome-eog.xpm>
+      [end]
+   [end]
+   [submenu] (Games) {}
+      [submenu] (Blocks) {}
+         [exec] (Bastet) { x-terminal-emulator -T "Bastet" -e /usr/games/bastet} </usr/share/pixmaps/bastet.xpm>
+      [end]
+      [submenu] (Tools) {}
+         [exec] (fceux) {/usr/games/fceux} <>
+         [exec] (Rclock) {/usr/bin/rclock} <>
+         [exec] (Tiled Map Editor) {/usr/bin/tiled} </usr/share/pixmaps/tiled/tiled-icon-32.xpm>
+      [end]
+   [end]
+   [submenu] (Screen) {}
+      [submenu] (Locking) {}
+         [exec] (Lock Screen (XScreenSaver\)) {/usr/bin/xscreensaver-command -lock} <>
+      [end]
+      [submenu] (Saving) {}
+         [exec] (Activate ScreenSaver (Next\)) {/usr/bin/xscreensaver-command -next} <>
+         [exec] (Activate ScreenSaver (Previous\)) {/usr/bin/xscreensaver-command -prev} <>
+         [exec] (Activate ScreenSaver (Random\)) {/usr/bin/xscreensaver-command -activate} <>
+         [exec] (Demo Screen Hacks) {/usr/bin/xscreensaver-command -demo} <>
+         [exec] (Disable XScreenSaver) {/usr/bin/xscreensaver-command -exit} <>
+         [exec] (Enable XScreenSaver) {/usr/bin/xscreensaver} <>
+         [exec] (Reinitialize XScreenSaver) {/usr/bin/xscreensaver-command -restart} <>
+         [exec] (ScreenSaver Preferences) {/usr/bin/xscreensaver-command -prefs} <>
+      [end]
+   [end]
+   [config] (Configuration)
+   [submenu] (Styles) {}
+      [stylesdir] (/usr/share/fluxbox/styles)
+      [stylesdir] (~/.fluxbox/styles)
+   [end]
+  [end]
+
+  [workspaces] (Workspaces)
+  [reconfig] (Reconfigure)
+  [restart] (Restart)
+  [exec] (Lock) {~/local/bin/lockscreen}
+  [exit] (Exit)
+  [exec] (Reboot) {systemctl -q --no-block reboot}
+  [exec] (Shutdown) {systemctl -q --no-block poweroff}
+
+[end]

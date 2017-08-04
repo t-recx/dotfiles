@@ -37,6 +37,12 @@ ln -s ~/dotfiles/bash/bash_aliases ~/.bash_aliases
 ln -s ~/dotfiles/awesome/scripts/lockscreen ~/local/bin/
 mkdir -p ~/.config/sakura
 ln -s ~/dotfiles/sakura/sakura.conf ~/.config/sakura/sakura.conf
+ln -s ~/dotfiles/fluxbox/apps ~/.fluxbox/apps
+ln -s ~/dotfiles/fluxbox/keys ~/.fluxbox/keys
+ln -s ~/dotfiles/fluxbox/menu ~/.fluxbox/menu
+ln -s ~/dotfiles/fluxbox/startup ~/.fluxbox/startup
+ln -s ~/dotfiles/fluxbox/init ~/.fluxbox/init
+ln -s ~/dotfiles/fluxbox/windowmenu ~/.fluxbox/windowmenu
 ```
 
 ## Random things:
