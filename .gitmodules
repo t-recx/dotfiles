@@ -40,3 +40,6 @@
 [submodule "vim/bundle/commentary"]
 	path = vim/bundle/commentary
 	url = git://github.com/tpope/vim-commentary.git
+[submodule "vim/bundle/simple-todo"]
+	path = vim/bundle/simple-todo
+	url = https://github.com/vitalk/vim-simple-todo

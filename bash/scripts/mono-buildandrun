@@ -1,0 +1,23 @@
+#!/bin/sh
+currentdir=$(pwd)
+
+while true 
+do
+  if find *.sln -type f 2> /dev/null
+  then
+    startupproject=`cat *.sln | grep StartupItem | awk '{print \$(NF)}' | awk '{split(\$0,a,"\\\\"); gsub("\n", "", a[1]); printf "%s", a[1]}'`
+
+    xbuild && cd "$startupproject/bin/Debug" && mono "$startupproject.exe"
+    
+    break
+  else
+    cd ..
+
+    if [ $(pwd) = "/"  ]
+    then
+      break
+    fi
+  fi
+done 
+  
+cd $currentdir

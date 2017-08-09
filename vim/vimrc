@@ -41,3 +41,4 @@ endif
 
 " \h - Toggle highlight:
 nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n" 
+map <F5> :!mono-buildandrun<CR>
